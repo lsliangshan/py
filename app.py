@@ -20,8 +20,8 @@ def index():
 def greeting():
     return {
         "status": 200,
-        "message": "hello"
-    }
+        "message": "hello2"
+    }, 200
 
 
 @app.route('/login', methods=['GET', 'POST'])
