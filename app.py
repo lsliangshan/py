@@ -16,6 +16,14 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/greeting')
+def greeting():
+    return {
+        "status": 200,
+        "message": "hello"
+    }
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
